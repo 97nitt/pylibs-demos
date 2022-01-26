@@ -1,0 +1,2 @@
+pylibs.aws==0.1.0
+pylibs.core==0.1.0

@@ -1,0 +1,15 @@
+version: '3'
+services:
+  kinesis-consumer:
+    build:
+      context: .
+      args:
+        - pip_extra_index_url=${PIP_EXTRA_INDEX_URL}
+    command: demos.kinesis.consumer
+    environment:
+      - AWS_DEFAULT_REGION
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_SESSION_TOKEN
+      - KINESIS_STREAM
+      - KINESIS_STREAM_GZIPPED
