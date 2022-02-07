@@ -11,6 +11,7 @@ file in the root directory of this project. The variables used by each app can b
 
 | Command                              | Description                                          |
 |--------------------------------------|------------------------------------------------------|
+| `docker compose up kafka-clients`    | Starts a Kafka producer and consumer                 |
 | `docker compose up kinesis-consumer` | Starts a multi-threaded consumer of a Kinesis stream |
 
 ## Local Development
